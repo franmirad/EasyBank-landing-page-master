@@ -1,0 +1,161 @@
+/*//----------------------------------------// 1380PX //----------------------------------------//*/
+@media (max-width: 1380px) and (min-width: 320px) {
+
+  /*//----------------------------------------// HERO //----------------------------------------//*/
+  body {
+    background-color: var(--VeryLightGray);
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .left-hero {
+    max-width: 80%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    padding-top: 200px;
+  }
+
+  .right-hero-container {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .right-hero {
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    position: sticky;
+    transform: translateY(200px);
+
+    img {
+      padding-left: 0;
+      width: 100%;
+      background: url(../images/bg-intro-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right 120px;
+      object-fit: cover;
+
+    }
+
+  }
+
+
+
+  /*//----------------------------------------// FEATURES //----------------------------------------//*/
+  .features {
+    padding-top: 50px;
+  }
+
+  .features-text {
+    text-align: center;
+  }
+
+  [data-component="feature"] {
+    text-align: center;
+  }
+
+  /*//----------------------------------------// ARTICLES //----------------------------------------//*/
+  .articles {
+    h2 {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+/*//----------------------------------------// 1024PX //----------------------------------------//*/
+@media (max-width: 1024px) and (min-width: 320px) {
+
+  /*//----------------------------------------// HERO //----------------------------------------//*/
+  .left-hero {
+    margin-bottom: 30px;
+    padding-bottom: 0;
+
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  .features,
+  .articles,
+  footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+
+  /*//----------------------------------------// FOOTER //----------------------------------------//*/
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-button {
+    align-items: center;
+  }
+}
+
+/*//----------------------------------------// 800PX //----------------------------------------//*/
+@media (max-width: 800px) and (min-width: 320px) {
+  header {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 40px !important;
+  }
+
+  .navbar,
+  .header-button {
+    display: none;
+  }
+
+  .burger-menu-btn {
+    display: inline-block !important;
+  }
+}
+
+/*//----------------------------------------// 720PX //----------------------------------------//*/
+@media (max-width: 720px) and (min-width: 320px) {
+
+  .hero {
+    z-index: auto;
+  }
+
+  .right-hero {
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+
+    img {
+      padding-left: 0;
+      width: 100%;
+      background: url(../images/bg-intro-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right 120px;
+      object-fit: cover;
+    }
+
+  }
+}
+
+/*//----------------------------------------// 375PX //----------------------------------------//*/
+@media (max-width: 375px) and (min-width: 320px) {
+  h1 {
+    font-size: 35px !important;
+  }
+}
